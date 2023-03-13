@@ -10,7 +10,7 @@ const TextArea = () => {
                         <h4>
                             <span>I am a {""}</span>
                             <Typical
-                                steps={['Front-End Developer', 2000, 'Web Developer', 1500]}
+                                steps={['Web Designer', 2000, 'Web Developer', 1500]}
                                 loop={Infinity}
                                 wrapper="b"
                             />

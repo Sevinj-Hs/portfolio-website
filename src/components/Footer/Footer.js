@@ -7,17 +7,14 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 offset-lg-4">
                         <div className="content d-flex">
-                            {/* ======= Rufat ======= */}
-                            <div className="rufat">
-                                <a href="#home"><h4>RUFAT</h4></a>
+                            <div className="sevinj">
+                                <a href="#home"><h4>SEVINJ</h4></a>
                             </div>
 
-                            {/* ======= Social Media ======= */}
                             <SocialMedia />
 
-                            {/* ======= Copyright ======= */}
                             <div className="copyright">
-                                <p>Copyright 2021. All Rights Reserved.</p>
+                                <p>Copyright 2023. All Rights Reserved.</p>
                             </div>
                         </div>
                     </div>

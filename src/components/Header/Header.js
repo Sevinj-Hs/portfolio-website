@@ -17,8 +17,8 @@ const Header = () => {
         <header className={backgroundColor ? "active" : ""}>
             <div className="container">
                 <div className="content">
-                    <div className="rufat">
-                        <h4><a href="#home">RUFAT</a></h4>
+                    <div className="sevinj">
+                        <h4><a href="#home">SEVINJ</a></h4>
                     </div>
                     <div className={hamburger ? "nav-menu-wrapper show-nav-menu" : "nav-menu-wrapper"}>
                         <ul className="nav-menu">

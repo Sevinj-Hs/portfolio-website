@@ -14,8 +14,8 @@ const Portfolio = () => {
             title: "All",
         },
         {
-            id: "ecommerce",
-            title: "E-commerce",
+            id: "photos",
+            title: "Photos",
         },
         {
             id: "other",
@@ -34,8 +34,8 @@ const Portfolio = () => {
             case "all":
                 setData(Projects);
                 break;
-            case "ecommerce":
-                setData(Projects.filter(project => project.category === "e-commerce"));
+            case "photos":
+                setData(Projects.filter(project => project.category === "photos"));
                 break;
             case "other":
                 setData(Projects.filter(project => project.category === "other"));
@@ -88,7 +88,7 @@ const Portfolio = () => {
                                                 </div>
                                                 <div className="title-and-technologies">
                                                     <h5>
-                                                        <a href={project.link} target='__blank'>
+                                                        <a href={"/"}>
                                                             {project.title}
                                                         </a>
                                                     </h5>

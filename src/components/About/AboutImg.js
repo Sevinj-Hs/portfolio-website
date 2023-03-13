@@ -1,4 +1,4 @@
-import MyImg from '../../assets/img/other/sevinc.jpg';
+import MyImg from '../../assets/img/other/sevinc.jpeg';
 
 const AboutImg = () => {
     return (

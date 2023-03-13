@@ -18,7 +18,7 @@ const Contact = () => {
                             {
                                 ContactItems.map((item) => {
                                     return (
-                                        <li key={item.id}>
+                                        <li key={item.id} style={item.id === 2 ? { paddingRight: "40px" } : undefined}>
                                             <h6 className="d-flex justify-content-center">
                                                 {item.icon}
                                                 <span>{item.content}</span>
