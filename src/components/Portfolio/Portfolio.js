@@ -18,8 +18,8 @@ const Portfolio = () => {
             title: "Photos",
         },
         {
-            id: "other",
-            title: "Other",
+            id: "gif",
+            title: "Gif",
         }
     ];
 
@@ -37,8 +37,8 @@ const Portfolio = () => {
             case "photos":
                 setData(Projects.filter(project => project.category === "photos"));
                 break;
-            case "other":
-                setData(Projects.filter(project => project.category === "other"));
+            case "gif":
+                setData(Projects.filter(project => project.category === "gif"));
                 break;
             default:
                 setData(Projects);

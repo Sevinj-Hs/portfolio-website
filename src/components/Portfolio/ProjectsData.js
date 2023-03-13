@@ -41,13 +41,13 @@ export const Projects = [
         img: require("../../assets/img/projects/flat SEVİNC.jpg").default,
         technologies: "Photoshop",
     },
-    {
-        id: 7,
-        title: "Title",
-        category: "photos",
-        img: require("../../assets/img/projects/hsevinc.gif").default,
-        technologies: "Photoshop",
-    },
+    // {
+    //     id: 7,
+    //     title: "Title",
+    //     category: "gif",
+    //     img: require("../../assets/img/projects/hsevinc.gif").default,
+    //     technologies: "Photoshop",
+    // },
     {
         id: 8,
         title: "Title",
@@ -81,13 +81,6 @@ export const Projects = [
         title: "Title",
         category: "photos",
         img: require("../../assets/img/projects/Sevinc3.png").default,
-        technologies: "Photoshop",
-    },
-    {
-        id: 13,
-        title: "Title",
-        category: "photos",
-        img: require("../../assets/img/projects/Sevinc4.png").default,
         technologies: "Photoshop",
     },
     {
