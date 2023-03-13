@@ -1,0 +1,90 @@
+#skills {
+  padding: 90px 0;
+  background-color: rgb(247, 247, 247);
+
+  .skills-holder {
+    .skill-item {
+      padding-bottom: 25px;
+      .skill-title-and-percent {
+        justify-content: space-between;
+        font-family: "Nunito", sans-serif;
+        h6,
+        span {
+          font-weight: 400;
+          font-size: 15px;
+        }
+        span{
+          font-size: 14px;
+        }
+      }
+      .bar-holder {
+        width: 100%;
+        height: 0.1rem;
+        background-color: rgb(204, 204, 204);
+        position: relative;
+        .bar {
+          position: absolute;
+          background-color: rgb(51, 51, 51);
+          height: 100%;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #skills {
+    .section-title {
+      &::before {
+        left: 30px;
+      }
+      &::after {
+        right: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #skills {
+    .section-title {
+      &::before {
+        left: 230px;
+      }
+      &::after {
+        right: 230px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #skills {
+    .section-title {
+      &::before {
+        left: 138px;
+      }
+      &::after {
+        right: 138px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  #skills {
+    padding: 90px 7px;
+
+    .section-title {
+      &::before {
+        left: calc(50% - 105px);
+      }
+      &::after {
+        right: calc(50% - 105px);
+      }
+    }
+  }
+}

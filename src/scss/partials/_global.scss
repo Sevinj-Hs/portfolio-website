@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.section-title {
+  padding-bottom: 60px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 57px;
+    width: 30px;
+    height: 1px;
+    background-color: black;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 57px;
+    width: 30px;
+    height: 1px;
+    background-color: black;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+#back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  display: none;
+
+  button {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    height: 50px;
+    width: 55px;
+  }
+}
+.show-back-to-top-btn{
+    display: block !important;
+}
+
+// ======= Responsive Design ======= //
+@media (max-width: 575.98px){
+  .section-title {
+    h1{
+      font-size: 22px;
+    }
+  }
+
+  #back-to-top-btn {
+    bottom: 25px !important;
+  }
+}

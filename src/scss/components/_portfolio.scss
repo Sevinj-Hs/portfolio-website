@@ -1,0 +1,159 @@
+#portfolio {
+  padding: 92px 0 75px;
+  background-color: rgb(247, 247, 247);
+
+  .section-title {
+    &::before {
+      left: 35px;
+    }
+    &::after {
+      right: 35px;
+    }
+  }
+
+  .categories {
+    justify-content: center;
+    padding-bottom: 30px;
+    ul {
+      width: 200px;
+      justify-content: space-between;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+          border: none;
+          background-color: transparent;
+        }
+        hr {
+          width: 0;
+          margin: 0;
+          background-color: black;
+          transition: 0.4s ease;
+        }
+        &:hover {
+          hr {
+            width: 100%;
+            transition: 0.4s ease;
+          }
+        }
+      }
+    }
+
+    .active-btn {
+      hr {
+        width: 100%;
+      }
+    }
+  }
+
+  .project-item {
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 90px;
+
+    &:hover {
+      .project-img img {
+        transform: scale(1.2);
+      }
+    }
+
+    .project-img {
+      height: 200px;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .title-and-technologies {
+      position: absolute;
+      bottom: -80px;
+      left: 50%;
+      transform: translate(-50%, -5px);
+      text-align: center;
+
+      h5 {
+        font-size: 18px;
+
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+
+      p {
+        white-space: nowrap;
+        font-style: italic;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #portfolio {
+    .section-title {
+      &::before {
+        left: 8px;
+      }
+      &::after {
+        right: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #portfolio {
+    .section-title {
+      &::before {
+        left: 208px;
+      }
+      &::after {
+        right: 208px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  #portfolio {
+    padding: 90px 7px 60px;
+
+    .section-title {
+      &::before {
+        left: 115px;
+      }
+      &::after {
+        right: 115px;
+      }
+    }
+
+    .project-item {
+      margin-bottom: 95px;
+
+      .project-img {
+        height: 280px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  #portfolio {
+    .section-title {
+      &::before {
+        left: calc(50% - 123px);
+      }
+      &::after {
+        right: calc(50% - 123px);
+      }
+    }
+  }
+}

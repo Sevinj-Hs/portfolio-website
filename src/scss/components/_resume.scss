@@ -1,0 +1,192 @@
+#resume {
+  padding: 90px 0 70px;
+  font-family: "Nunito", sans-serif;
+
+  .section-title {
+    &::before {
+      left: 48px;
+    }
+    &::after {
+      right: 48px;
+    }
+  }
+
+  .edu-wrapper,
+  .exp-wrapper {
+    padding: 0 60px;
+    h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 1px;
+        width: 32px;
+        background-color: black;
+      }
+    }
+    .item {
+      .top {
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5px;
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 0;
+          position: relative;
+        }
+        span {
+          font-size: 13px;
+          padding: 3px 15px;
+          border: 1px solid black;
+        }
+      }
+      .bottom {
+        h6 {
+          font-size: 13px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .exp-item {
+      padding: 0 0 25px 32px;
+      h4 {
+        &::before {
+          content: "\f0b1";
+          font-family: "Font Awesome 5 Free";
+        }
+      }
+    }
+    .edu-item {
+      padding: 0 0 25px 34px;
+      h4 {
+        &::before {
+          content: "\f19d";
+          font-family: "Font Awesome 5 Free";
+          left: -34px !important;
+        }
+      }
+    }
+    .edu-item,
+    .exp-item {
+      h4 {
+        &::before {
+          font-weight: 900;
+          position: absolute;
+          left: -32px;
+          bottom: 1px;
+        }
+      }
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #resume {
+    .section-title {
+      &::before {
+        left: 23px;
+      }
+      &::after {
+        right: 23px;
+      }
+    }
+
+    .edu-wrapper,
+    .exp-wrapper {
+      padding: 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #resume {
+    .section-title {
+      &::before {
+        left: 220px;
+      }
+      &::after {
+        right: 220px;
+      }
+    }
+
+    .edu-wrapper,
+    .exp-wrapper {
+      padding: 0;
+    }
+
+    .exp-wrapper {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #resume {
+    .section-title {
+      &::before {
+        left: 130px;
+      }
+      &::after {
+        right: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  #resume {
+    padding: 90px 7px 70px;
+
+    .section-title {
+      &::before {
+        left: calc(50% - 112px);
+      }
+      &::after {
+        right: calc(50% - 112px);
+      }
+    }
+
+    .edu-wrapper,
+    .exp-wrapper {
+      .edu-item,
+      .exp-item {
+        h4 {
+          &::before {
+            font-size: 17px;
+            left: -30px !important;
+          }
+        }
+      }
+
+      .top {
+        height: 65px;
+        flex-direction: column;
+        align-items: flex-start !important;
+      }
+      .bottom {
+        padding-top: 11px;
+      }
+    }
+
+    .edu-wrapper {
+      .edu-item {
+        padding: 0 0 25px 32px;
+      }
+    }
+    .exp-wrapper {
+      .exp-item {
+        padding: 0 0 25px 30px;
+      }
+    }
+  }
+}
