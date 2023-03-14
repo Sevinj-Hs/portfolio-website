@@ -54,7 +54,7 @@ const SendMessage = () => {
         <div className="col-lg-8">
             <form onSubmit={sendEmail}>
                 <div className="form-row">
-                    <div className="col-lg-6">
+                    <div className="col-md-12">
                         {/* ======= Name ======= */}
                         <div className="name wrapper">
                             <label className={nameMoveUp ? "move-up" : "form-label"}>Name</label>
@@ -64,12 +64,12 @@ const SendMessage = () => {
                                 spellCheck="false"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                onFocus={() => {setNameMoveUp(true)}}
-                                onBlur={(e) => {if(!e.target.value) setNameMoveUp(false)}}
+                                onFocus={() => { setNameMoveUp(true) }}
+                                onBlur={(e) => { if (!e.target.value) setNameMoveUp(false) }}
                             />
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-md-12">
                         {/* ======= Email ======= */}
                         <div className="email wrapper">
                             <label className={emailMoveUp ? "move-up-email" : "form-label"}>Email</label>
@@ -79,8 +79,8 @@ const SendMessage = () => {
                                 spellCheck="false"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                onFocus={(e) => {setEmailMoveUp(true)}}
-                                onBlur={(e) => {if(!e.target.value) setEmailMoveUp(false)}}
+                                onFocus={(e) => { setEmailMoveUp(true) }}
+                                onBlur={(e) => { if (!e.target.value) setEmailMoveUp(false) }}
                             />
                         </div>
                     </div>
@@ -96,8 +96,8 @@ const SendMessage = () => {
                                 spellCheck="false"
                                 value={subject}
                                 onChange={(e) => setSubject(e.target.value)}
-                                onFocus={() => {setSubjectMoveUp(true)}}
-                                onBlur={(e) => {if(!e.target.value) setSubjectMoveUp(false)}}
+                                onFocus={() => { setSubjectMoveUp(true) }}
+                                onBlur={(e) => { if (!e.target.value) setSubjectMoveUp(false) }}
                             />
                         </div>
                     </div>
@@ -114,8 +114,8 @@ const SendMessage = () => {
                                 spellCheck="false"
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                onFocus={() => {setMessageMoveUp(true)}}
-                                onBlur={(e) => {if(!e.target.value) setMessageMoveUp(false)}}
+                                onFocus={() => { setMessageMoveUp(true) }}
+                                onBlur={(e) => { if (!e.target.value) setMessageMoveUp(false) }}
                             >
                             </textarea>
                         </div>

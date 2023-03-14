@@ -23,6 +23,7 @@ const Skills = () => {
                             <ProgressBar skill={'AutoCad'} progressPercent={'40%'} progressWidth={'40%'} />
                             <ProgressBar skill={'Microsoft Word'} progressPercent={'90%'} progressWidth={'90%'} />
                             <ProgressBar skill={'Microsoft PowerPoint'} progressPercent={'90%'} progressWidth={'90%'} />
+                            <ProgressBar skill={'Microsoft Excel'} progressPercent={'60%'} progressWidth={'60%'} />
                         </div>
                     </div>
                 </div>

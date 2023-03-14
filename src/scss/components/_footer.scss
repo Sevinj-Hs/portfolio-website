@@ -9,9 +9,7 @@ footer {
       a {
         color: white;
         letter-spacing: 1px;
-        &:hover {
-          text-decoration: none;
-        }
+        text-decoration: none;
         h4 {
           font-weight: 300;
           margin-bottom: 0;
@@ -25,6 +23,7 @@ footer {
       ul {
         display: flex;
         justify-content: space-between;
+        padding-left: 0;
         li {
           a {
             color: rgb(197, 197, 197);

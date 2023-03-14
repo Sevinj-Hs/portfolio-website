@@ -74,6 +74,7 @@
     ul {
       position: relative;
       height: 90px;
+      padding-left: 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -111,10 +112,12 @@
     a {
       color: white;
       text-transform: uppercase;
+      text-decoration: none;
       font-weight: 300;
       font-size: 15px;
       letter-spacing: 1px;
       position: relative;
+
       &:hover {
         text-decoration: none;
       }

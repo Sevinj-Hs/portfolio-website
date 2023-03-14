@@ -82,11 +82,7 @@
         padding: 11px 0 0 15px;
       }
     }
-    .name {
-      padding-right: 5px;
-    }
     .email {
-      padding-left: 5px;
       label {
         left: 25px;
 
@@ -137,6 +133,14 @@
 }
 
 // ======= Responsive Design ======= //
+// @media (min-width: 1200px) and (max-width: 1399.98px) {
+//   #contact {
+//     .contact-items {
+//       padding-left: 70px;
+//     }
+//   }
+// }
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #contact {
     .section-title {
@@ -146,6 +150,10 @@
       &::after {
         right: 35px;
       }
+    }
+
+    .contact-items {
+      padding-left: 0;
     }
   }
 }

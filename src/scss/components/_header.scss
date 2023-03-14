@@ -1,6 +1,6 @@
 header {
   background-color: transparent;
-  padding: 0 50px;
+  padding: 0 200px;
   transition: 1s ease;
   position: fixed;
   z-index: 999;
@@ -16,9 +16,7 @@ header {
     a {
       color: white;
       font-weight: 300;
-      &:hover {
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
 
     .sevinj {
@@ -45,7 +43,8 @@ header {
           hr {
             margin: 0;
             width: 0;
-            background-color: white;
+            color: white;
+            opacity: 1;
             transition: 0.4s ease;
           }
 
